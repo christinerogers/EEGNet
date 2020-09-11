@@ -21,10 +21,12 @@
 <meta name="theme-color" content="#ffffff">
 <!-- general -->
 <meta charset="utf-8">
-<title>NeuroHub</title>
+<title>EEGNet</title>
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="NeuroHub - An Open Science Infrastructure for Reproducible, Collaborative, Multidisciplinary Scientific Research. This is the about page for the NeuroHub website.">
+<!--
+meta name="description" content="NeuroHub - An Open Science Infrastructure for Reproducible, Collaborative, Multidisciplinary Scientific Research. This is the about page for the NeuroHub website.">
 <meta name="keywords" content="Neuro, NeuroHub, Research, Big Data, Science, Medicine, Datalad">
+-->
 <meta name="author" content="Derek Lo @ 3design-dlo.com">
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
@@ -39,44 +41,49 @@
 
   <nav class="site-nav">
     <div class="nav-container">
-      <a href="index.html"><img src="images/logo-neurohub.png" class="logo bottom" alt="NeuroHub logo"></a>
+      <a href="index.html"><img src="images/logo-eegnet.png" class="logo bottom" alt="EEGNet logo"></a>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
         <li class="nav-item"><a href="#!">About</a>
-          <ul class="nav-dropdown">
-            <li>
-              <a href="about.html" class="active">About Neurohub</a>
-            </li>
-            <li>
-              <a href="vision.html">Our Vision</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item"><a href="events.html">Events</a></li>
-        <li class="nav-item"><a href="tools.html">Tools</a></li>
-        <li class="nav-item"><a href="team.html">Team</a></li>
-        <li class="nav-item"><a href="documentation.html">Documentation</a></li>
-        <li class="nav-item"><a href="portal.html" class="new">Portal</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
       </ul>
     </div>
   </nav>
-  <div id="prompt" title="scroll down for more info">▼</div>
-  <div class="content-wrapper">
     <!-- technical section -->
-    <section class="extra-top">
-      <div class="section-content">
-        <h1 class="full-width text-center">About NeuroHub</h1>
-        <div class="col-2 flex" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-offset="100"><img src="images/infographic-how.png" class="infographic auto-width" alt="Infographic with HBHL logo in a question mark"></div>
-        <div class="col-2" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="100" data-aos-delay="250">
-          <h2>How will NeuroHub work?</h2>
-          <p>NeuroHub will be an engine to combine data and gain new insights on the brain and overall health of populations in Canada and around the world.</p>
-          <p>The platform will bring together established data and computational infrastructure with new technologies to provide a web-based platform to support scientific research in neuroinformatics, genomics, social sciences, biology, among others.</p>
-          <p>It will offer researchers a repository of standardized, machine-readable data from a range of sources along with the latest machine learning, neuroinformatics, modeling and statistical tools and techniques, which will facilitate combining analysis with novel, at-scale methodologies.</p>
-          <p>NeuroHub will be among the few neuroscience platforms that will include not only traditional datasets from neuroimaging and genomics, but also cohort and longitudinal data from behavioural, population and social science studies, and soft data extracted from existing publications (e.g. extracting intervention effectiveness or behavioural influences from published studies).</p>
-          <p>Data collected through established platforms at McGill University, (e.g. LORIS, PopHR, CBRAIN, etc…), will be automatically added to the repository, while preserving appropriate levels of data security and privacy. Metadata querying and management technologies such as Datalad will make the data discoverable, accessible and reusable.</p>
-          <p>By linking diverse datasets together with metadata, the platform will federate several known data sources with newly collected and curated sources from McGill research to create one of the richest, searchable data repositories in the world.</p>
-        </div>
-      </div>
+    <section  class="grey-bg list-section">
+      <div class="section-content flex card-holder flex-center">
+        <h1 class="full-width text-center">About EEGNet</h1>
+        <p>EEGNet's national network of neuroscience researchers : </p>
+        <h1 class="full-width text-center">Lead Investigators</h1>
+        <ul class="team-list">
+          <li>Alan C. Evans, McGill University</li>
+          <li>Philippe Albouy, Université Laval</li>
+          <li>Sid Segalowitz, Brock University</li>
+        </ul>
+        <h1 class="full-width text-center">Co-Investigators</h1>
+        <ul class="team-list">
+          <li>Shirley Fecteau, Université Laval</li>
+          <li>Isabelle Blanchette, Université Laval</li>
+          <li>Célyne Bastien, Université Laval</li>
+          <li>Anne Gallagher, Université de Montréal</li>
+          <li>Sarah Lippé, Université de Montréal</li>
+          <li>Ingrid Johnsrude, University of Western Ontario</li>
+          <li>Adrian Owen, University of Western Ontario</li>
+          <li>Jorge Bosch-Bayard, McGill University</li>
+          <li>Jean Gotman, McGill University</li>
+          <li>Birgit Frauscher, McGill University</li>
+          <li>Mayada Elsabbagh, McGill University</li>
+          <li>Stefon van Noordt, McGill University</li>
+          <li>Stefanie Blain-Moraes, McGill University</li>
+          <li>Signe Bray, University of Calgary</li>
+          <li>Ashley Harris, University of Calgary</li>
+          <li>Erin Panda, Brock University</li>
+          <li>Ayda Tekok Kilic, Brock University</li>
+          <li>Christine Lackner, Mount St Vincent University</li>
+          <li>Karen Campbell, Brock University</li>
+          <li>Teena Willoughby, Brock University</li>
+        </ul>
+       </div>        
     </section>
     <div class="clear-all"></div>
    <!-- footer -->
@@ -88,16 +95,6 @@
           <a href="http://ludmercentre.ca"><img src="images/logo-ludmer.png" alt="Ludmercentre logo"></a>
           <a href="https://mcgill.ca"><img src="images/logo-mcgill.png" alt="McGill logo"></a>
           <a href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg" alt="the Montreal Neurological Institute-Hospital logo"></a>
-        </div>
-        <div class="col-2 font-white text-center">
-          <h3>Contact Us</h3>
-          General Inquiries: <a href="mailto:info@neurohub.ca" class="font-white">info@neurohub.ca</a>
-        </div>
-        <div class="col-2 font-white text-center">
-          <a href="https://github.com/neurohub" class="font-white">
-            <img src="images/logo-github.png" class="github-icon center">
-            <h3>Find us on GitHub</h3>            
-          </a>
         </div>
       </div>
     </footer>
