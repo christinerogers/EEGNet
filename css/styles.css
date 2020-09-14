@@ -228,7 +228,8 @@ code {
 }
 .col-2,
 .col-3,
-.col-4 {
+.col-4,
+.col-75 {
   width: 100%;
   margin: 0 auto;
 }
@@ -263,7 +264,8 @@ code {
     max-width: 400px;
     max-height: 400px;
   }
-  .col-4 {
+  .col-4,
+  .col-75 {
     width: 50%;
     float: left;
     margin: 0;
@@ -284,6 +286,11 @@ code {
     width: 25%;
     float: left;
     margin: 0;
+  }
+  .col-75 {
+    width: 75%;
+    float: left;
+    margin: 0 0 20px 0;
   }
 }
 /* navigation */
@@ -474,7 +481,7 @@ ul.hide {
   line-height: 0;
 }
 video#myVideo {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100%;
 }
 .title-content {
@@ -502,7 +509,7 @@ video#myVideo {
     font-size: 2em;
   }
   .title-content p {
-    font-size: 1em;
+    font-size: .8em;
     padding: 0;
   }
     video#myVideo {
@@ -511,7 +518,7 @@ video#myVideo {
     left: 0;
     width: 100%;
     /*z-index-1;*/
-    margin-top: 75px;
+    margin-top: 35px;
   }
   .video-wrapper {
     position: relative;
@@ -708,13 +715,34 @@ img.block-image {
   }
 }
 .team-list {
-  /*list-style: inside;*/
+  list-style: none;
   padding: 30px 20px;
+}
+.team-list li {
+  margin-bottom: 30px
+}
+.team-image {
+  max-width: 200px;
+  border-radius: 200px;
+  margin: 0 auto;
+}
+.team-name {
+  text-align: center;
+  font-size: .9em
+}
+.team-description {
+  padding-left: 0;
+  line-height: 1.7em;
 }
 .github-icon {
   margin: 20px auto 0px auto; 
   width: 32px;
   height: auto;
+}
+@media screen and (min-width: 620px) {
+  .team-description {
+    padding-left: 15px;
+  }
 }
 @media screen and (min-width: 800px) {
   .github-icon {
@@ -748,4 +776,98 @@ img.block-image {
 }
 .invisible {
   display: none;
+}
+
+/* styles for accordion */
+
+details {
+color: #343434;
+background: #f3f3f3;
+border: 1px solid #f3f3f3;
+cursor: pointer;
+/*  -webkit-transition: background 0.3s;
+transition: background 0.3s;*/
+border-radius: 4px;
+min-height: 48px;
+max-height: 60px;
+/*  -webkit-transform-origin: top center;
+        transform-origin: top center;
+-webkit-transform: rotate(0.1deg);
+        transform: rotate(0.1deg);
+-webkit-transition: all 0.3s;
+transition: all 0.3s;*/
+margin: 15px 0;
+}
+@media screen and (min-width: 640px) {
+  details {
+    margin: 15px 0 15px 15px;
+  }
+}
+details:hover {
+  /*color: #dadada;*/
+  border-color: #878d99;
+}
+details:active {
+  color: #dadada;
+  border-color: #6d7380;
+}
+details ::-webkit-details-marker {
+  display: none;
+}
+details p {
+  line-height: 1.7;
+  padding: 15px;
+  background-color: #fff;
+}
+details.success {
+  border-color: #67c23a;
+  background: #67c23a;
+}
+details.success:hover {
+  border-color: #67c23a;
+}
+details.success:active {
+  border-color: #529b2e;
+}
+details[open] {
+/*  -webkit-transition: all 0.2s;
+  transition: all 0.2s;*/
+  min-height: 100px;
+  max-height: none;
+}
+
+summary {
+  outline: none;
+  font-size: 16px;
+  padding: 13px;
+}
+summary:selection {
+  background: transparent;
+}
+summary .close {
+  display: none;
+}
+[open] summary .close {
+  display: inline;
+}
+summary .open {
+  display: inline;
+}
+[open] summary .open {
+  display: none;
+}
+[open] summary {
+  display: inline;
+}
+summary:after {
+  margin-top: 2px;
+  content: "➕";
+  float: left;
+  margin-right: 11px;
+  text-align: center;
+  font-size: 11px;
+}
+[open] summary:after {
+  padding: 0 0 12px 0;
+  content: "➖";
 }
