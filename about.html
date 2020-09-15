@@ -2,20 +2,10 @@
 <html>
 <head>
 <!-- favicon -->
-<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="site.webmanifest">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
@@ -155,10 +145,6 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
             </div>
             <div class="col-75">
               <p class="team-description">Dr Johnsrude (PhD McGill, 1997) is Professor and Western Research Chair at Western University, and Director of Western’s Brain and Mind Institute. She trained as a clinical neuropsychologist but for the last 20 years has been using neuroimaging (particularly EEG and fMRI) and psychoacoustic methods to study the importance of knowledge in guiding auditory and speech perception. Dr Johnsrude is the author of more than 100 peer-reviewed publications which have been cited over 22,500 times (Google Scholar). She has won multiple awards for her research, including the EWR Steacie Fellowship (2009). </p>
-<!--               <details class="default">
-                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
-                <p>She currently uses advanced imaging signal processing and modern statistics to delineate etiologic mechanisms leading to abnormal neurodevelopment. She was amongst the first to advocate for novel strategies in assessing outcomes in clinical trials and other intervention means aiming at improving cognition in children. Dr. Lippé is currently leading EEG phenotyping of two international Fragile X Syndrome and Autism Spectrum Disorders clinical trials. She is continuously supported by NSERC, CIHR, FRQ-S, Brain Canada and foundations. She has published >65 peer-reviewed articles and >190 abstracts, with several papers cited >100 times and covered widely by the press. Dr. Lippé has experience in leading large research and academic teams. As a mother of a child with neurodevelopmental disorders and as a clinical neuropsychologist, she is involved in several community based initiatives to serve these children.</p>
-              </details> -->
             </div>
             <div class="clear-all"></div>
           </li>
@@ -372,11 +358,16 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
             </div>
             <div class="clear-all"></div>
           </li>
-          <li>Teena Willoughby, Brock University</li>
         </ul>
+        <div class="map">
+          <h2 class="text-center">Partners Map</h2>
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=12QiKSZj9WJ-6HRktA2_iJqBBc7gszm2A" width="640" height="480"></iframe>
+        </div>
        </div>        
     </section>
     <div class="clear-all"></div>
+
+      
    <!-- footer -->
 
     <footer>  
@@ -404,8 +395,15 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
     });
   });
 </script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({duration: 1000, offset: 120,});
+</script> -->
+<script>
+$('.map')
+  .click(function(){
+      $(this).find('iframe').addClass('clicked')})
+  .mouseleave(function(){
+      $(this).find('iframe').removeClass('clicked')});
 </script>
 </body></html>
