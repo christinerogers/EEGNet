@@ -44,7 +44,7 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
       <!--div class="col-2" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="100" data-aos-delƒimgay="250"-->
       <div class="section-content flex card-holder flex-center data-aos-offset="100" data-aos-delƒimgay="250">
         <h1 class="full-width text-center">About EEGNet</h1>
-        <p>A national network of neuroscience researchers bring together expertise across 10 sites and 5 provinces.</p>
+        <p>A national network of neuroscience researchers bring together expertise across <a href="#map-anchor">10 sites and 5 provinces</a>.</p>
         <p>Many EEGNet researchers also form part of the Canadian Open Neuroscience Platform (<a href="CONP.ca">CONP</a>) as well as the Global Brain Consortium (<a href="https://globalbrainconsortium.org/">GBC</a>).</p>
         <ul class="full-width team-list">
         <h1 class="full-width text-center">Lead Investigator</h1>
@@ -385,10 +385,18 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
             <div class="clear-all"></div>
           </li>
         </ul>
-        <div class="map">
+        <div id="map-anchor" class="map">
           <h2 class="text-center">EEGNet research network</h2>
           <iframe src="https://www.google.com/maps/d/u/0/embed?mid=12QiKSZj9WJ-6HRktA2_iJqBBc7gszm2A" width="640" height="480"></iframe>
         </div>
+        <div class="section-content">
+        <h1 class="text-center">Related Publications</h1>
+        <ul>
+          <li>Frauscher, B. et al., 2018. Atlas of the normal intracranial electroencephalogram: Neurophysiological awake activity in different cortical areas. Brain. <a href="https://doi.org/10.1093/brain/awy035">https://doi.org/10.1093/brain/awy035</a></li>
+          <li>Frauscher B, et al., 2018. High frequency oscillations in the normal human brain. Annals of Neurology. <a href="https://doi.org/10.1002/ana.25304">https://doi.org/10.1002/ana.25304</a></li>
+          <li>von Ellenrieder N, et al., 2019. How the human brain sleeps: Direct cortical recordings from normal human sleep. Annals of Neurology. <a href="https://doi.org/10.1002/ana.25651">https://doi.org/10.1002/ana.25651</a></li>
+        </ul>
+      </div>
        </div>        
     </section>
     <div class="clear-all"></div>
@@ -421,15 +429,31 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
     });
   });
 </script>
-<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({duration: 1000, offset: 120,});
-</script> -->
 <script>
 $('.map')
   .click(function(){
       $(this).find('iframe').addClass('clicked')})
   .mouseleave(function(){
       $(this).find('iframe').removeClass('clicked')});
+</script>
+<script type="text/javascript">
+  // The function actually applying the offset
+function offsetAnchor() {
+  if (location.hash.length !== 0) {
+    window.scrollTo(window.scrollX, window.scrollY - 100);
+  }
+}
+
+// Captures click events of all <a> elements with href starting with #
+$(document).on('click', 'a[href^="#"]', function(event) {
+  // Click events are captured before hashchanges. Timeout
+  // causes offsetAnchor to be called after the page jump.
+  window.setTimeout(function() {
+    offsetAnchor();
+  }, 0);
+});
+
+// Set the offset when entering page with hash present in the url
+window.setTimeout(offsetAnchor, 0);
 </script>
 </body></html>
