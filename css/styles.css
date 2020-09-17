@@ -485,6 +485,10 @@ ul.hide {
 .map iframe.clicked{
   pointer-events: auto;
 }
+#map-anchor {
+  position: relative;
+  margin
+}
 @media screen and (min-width: 640px) {
   .map iframe {
     width: 100%;
