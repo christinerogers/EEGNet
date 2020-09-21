@@ -84,7 +84,7 @@ a:focus {
 }
 button {
   border: none;
-  background: #2C8EB3;
+  background: #777;
   width: 100%;
   margin-bottom: 20px;
   padding: 10px 20px;
@@ -906,4 +906,74 @@ summary:after {
 [open] summary:after {
   padding: 0 0 12px 0;
   content: "➖";
+}
+/* secondary navigation */
+
+.extreme-top {
+  padding-top: 80px;
+}
+#tabs a.anchor {
+  top: -200px;
+}
+.tabs-list li {
+    width: 100%;
+}
+.tabs-list li a button {
+  width: 100%;
+  margin: 0;
+  word-break: break-word;
+  font-size: .8em;
+}
+#tabs {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.tabs-list {
+  position: relative;
+  list-style: none;
+  margin-bottom: 0;
+  z-index: 9995;
+}
+.tabs-list li {
+  margin: 0;
+}
+.stick {
+  position: fixed;
+  top: 56px;
+  left: 50%;
+  transform: translate(-50%,0);
+  width: 100%;
+  max-width: 1200px;
+}
+.tabs-list.stick li a button {
+  box-shadow: 1px 1px 8px rgba(0,0,0,.5);
+}
+.stick-pad {
+  padding-bottom: 0px;
+}
+@media screen and (min-width: 700px) {
+  #tabs {
+    height: auto;
+  }
+  .stick {
+  }
+  .tabs-list {
+    display: flex;
+  }
+  .tabs-list li a button {
+    height: auto;
+    font-size: .9em;
+  }
+  .tabs-list li {
+      width: 33.3333%;
+  }
+}
+@media screen and (min-width: 980px) {
+  .stick {
+    top: 80px;
+  }
+  .tabs-list li a button {
+    font-size: 1em;
+  }
 }

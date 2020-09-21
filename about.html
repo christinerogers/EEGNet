@@ -34,6 +34,9 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
       <a href="index.html"><img src="images/logo-eegnet.png" class="logo bottom" alt="EEGNet logo"></a>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
+       <li class="nav-item"><a href="about.html" class="active">About</a></li>
+      </ul>
+      <!-- <ul id="menu" class="nav-list hide">
         <li class="nav-item"><a href="#!">About</a>
           <ul class="nav-dropdown">
             <li>
@@ -47,13 +50,40 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
             </li>
           </ul>
         </li>
-      </ul>
+      </ul> -->
     </div>
       </ul>
     </div>
   </nav>
+  <section>
+    <div id="tabs">
+          <ul id="second-nav" class="tabs-list stick">
+            <li>
+              <a href="#tabs">
+                <button data-mh="button">
+                  About EEGNet
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="#map-anchor">
+                <button data-mh="button">
+                  Network Map
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="#publications-anchor">
+                <button data-mh="button">
+                  Related Publications
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+  </section>
     <!-- technical section -->
-    <section class="extra-top">
+    <section class="extreme-top">
       <!--div class="section-content flex card-holder flex-center"-->
       <!--div class="col-2" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="100" data-aos-delƒimgay="250"-->
       <div class="section-content flex card-holder flex-center data-aos-offset="100" data-aos-delƒimgay="250">
@@ -470,4 +500,26 @@ $(document).on('click', 'a[href^="#"]', function(event) {
 // Set the offset when entering page with hash present in the url
 window.setTimeout(offsetAnchor, 0);
 </script>
+
+<!-- for sticky second nav -->
+<!-- <script>
+$("document").ready(function($){
+    var $stick = $('#second-nav');
+    var $pad = $('#stickypad');
+    var $win = $(window);
+    var winH = $win.height() + 0;   // Get the window height.
+
+    $win.on("scroll", function () {
+        if ($(this).scrollTop() > winH ) {
+            $stick.addClass("stick");
+            $pad.addClass("stick-pad");
+        } else {
+            $stick.removeClass("stick");
+            $pad.removeClass("stick-pad");
+        }
+    }).on("resize", function(){ // If the user resizes the window
+       winH = $(this).height(); // you'll need the new height value
+    });
+});
+</script> -->
 </body></html>
