@@ -850,6 +850,12 @@ details:active {
 details ::-webkit-details-marker {
   display: none;
 }
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
 details p {
   line-height: 1.7;
   padding: 15px;
