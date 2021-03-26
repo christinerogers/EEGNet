@@ -983,3 +983,7 @@ summary:after {
     font-size: 1em;
   }
 }
+.contact-form {
+  width: 100%;
+  height: 1200px;
+}

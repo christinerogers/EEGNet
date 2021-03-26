@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!-- general -->
+<meta charset="utf-8">
+<title>EEGNet</title>
+<meta name="viewport" content="width=device-width">
+<!--
+meta name="description" content="NeuroHub - An Open Science Infrastructure for Reproducible, Collaborative, Multidisciplinary Scientific Research. This is the about page for the NeuroHub website.">
+<meta name="keywords" content="Neuro, NeuroHub, Research, Big Data, Science, Medicine, Datalad">
+-->
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/drop-down.js"></script>
+</head>
+<body>
+<div id="main-wrapper">
+  <!-- navigation -->
+
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="index.html"><img src="images/logo-eegnet.png" class="logo bottom" alt="EEGNet logo"></a>
+      <div id="showmenu">Menu</div>
+      <ul id="menu" class="nav-list hide">
+       <li class="nav-item"><a href="about.html">About</a></li>
+       <li class="nav-item"><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </div>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- contact section -->
+  <section class="extra-pad">
+    <div class="section-content end">
+      <!-- <h1 class="full-width text-center">Contact Us</h1> -->
+      <!-- <h2 class="full-width text-center"></h2> -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeEDaqziD3yXOtVr3WSCRUa_D6WtfDfs6J--JtrB0HQFlP_sw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" class="contact-form">Loading…</iframe>
+    </div>
+  </section>
+  <div class="clear-all"></div>
+
+  <!-- footer -->
+    <footer>  
+      <div class="section-content flex flex-align-center">
+        <div class="logos">
+          <a href="https://braincanada.ca"><img src="images/logo-braincanada.png" alt="BrainCanada logo"></a>
+          <a href="http://ludmercentre.ca"><img src="images/logo-ludmer.png" alt="Ludmercentre logo"></a>
+          <a href="https://mcgill.ca"><img src="images/logo-mcgill.png" alt="McGill logo"></a>
+          <a href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg" alt="the Montreal Neurological Institute-Hospital logo"></a>
+          <a href="https://conp.ca"><img src="images/logo-conp-long.png" alt="the Canadian Open Neuroscience Platform logo"></a>
+          <a href="https://www.ulaval.ca/"><img src="images/logo-laval.png" alt="the University of Laval logo"></a>
+          <a href="https://brocku.ca/"><img src="images/logo-brock.png" alt="the University of Brock logo"></a>
+        </div>
+        <!-- div class="col-2 font-white text-center">
+          <h3>Contact Us</h3>
+          General Inquiries: <a href="mailto:info.loris@mcin.ca" class="font-white">info.loris@mcin.ca</a>
+        </div>
+        <div class="col-2 font-white text-center">
+          <a href="https://github.com/neurohub" class="font-white">
+            <img src="images/logo-github.png" class="github-icon center">
+            <h3>Find us on GitHub</h3>            
+          </a>
+        </div -->
+      </div>
+    </footer>
+</div>
+
+<!-- <script>
+    $(document).ready(function() {
+        $('#showmenu').click(function() {
+                $('.nav-list').toggleClass("hide");
+        });
+    });
+</script> -->
+
+<script>
+  $(function(){
+    $(".accordian h3").click(function(e){
+    $(".accordian ul p.answer").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+
+<script>
+  $(function(){
+    $("#showmenu").click(function(e){
+    $("#menu").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+</body></html>
