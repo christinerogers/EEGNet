@@ -523,8 +523,8 @@ video#myVideo {
 .title-content {
   position: absolute;
   top: 40%;
-  left: calc(50% - 160px);
-  max-width: 320px;
+  left: calc(50% - 150px);
+  width: 300px;
   text-align: center;
   line-height: initial;
   z-index: 1000;
@@ -572,15 +572,15 @@ video#myVideo {
   .title-content {
       position: absolute;
       top: 45%;
-      left: calc(50% - 200px);
-      max-width: 400px;
+/*      left: calc(50% - 200px);
+      max-width: 400px;*/
       text-align: center;
   }
 }
 @media screen and (min-width: 1024px) {
   .title-content {
-    max-width: 500px;
-    left: calc(50% - 250px);
+/*    max-width: 500px;
+    left: calc(50% - 250px);*/
   }
   .title-content h1 {
     font-size: 3em;
