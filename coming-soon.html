@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!-- general -->
+<meta charset="utf-8">
+<title>EEGNet</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="EEGNet">
+<meta name="keywords" content="EEGNet, neuroscience, electrophysiology, encephalography, Research, Big Data, Science, Medicine, BIDS">
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/drop-down.js"></script>
+</head>
+<body>
+<div id="main-wrapper">
+  <!-- navigation -->
+
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="index.html"><img width="70%" height="70%" src="images/logo-eeg2.png" class="logo bottom active" alt="EEGNet logo"></a>
+<!--       <div id="showmenu">Menu</div>
+      <ul id="menu" class="nav-list hide">
+       <li class="nav-item"><a href="about.html">About</a></li>
+       <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+      </ul> -->
+    </div>
+  </nav>
+
+  <div class="content-wrapper">
+    <!-- hero section -->
+    <section class="title-holder">
+      <video autoplay muted loop id="myVideo" poster="images/background-c-poster.png">
+        <source src="images/background-720c.mp4" alt="This is a video of a eeg background">
+        <img src="images/background-c-poster.png" title="your browser does not support video">
+        <!-- https://www.shutterstock.com/video/clip-22846555-abstract-background-animation---brain-function-eeg -->
+      </video>
+      <div class="title-content">
+        <img src="images/logo-eeg2.png" class="logo-hero" alt="EEGNet logo">
+        <p class="font-shadow-black font-white">Coming Soon</p>
+      </div>
+    </section>
+    <div class="clear-all"></div>
+
+    <footer>  
+      <div class="section-content flex flex-align-center">
+        <!-- <div class="logos">
+          <a href="https://braincanada.ca"><img src="images/logo-braincanada.png" alt="BrainCanada logo"></a>
+          <a href="http://ludmercentre.ca"><img src="images/logo-ludmer.png" alt="Ludmercentre logo"></a>
+          <a href="https://mcgill.ca"><img src="images/logo-mcgill.png" alt="McGill logo"></a>
+          <a href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg" alt="the Montreal Neurological Institute-Hospital logo"></a>
+          <a href="https://conp.ca"><img src="images/logo-conp-long.png" alt="the Canadian Open Neuroscience Platform logo"></a>
+          <a href="https://www.ulaval.ca/"><img src="images/logo-laval.png" alt="the University of Laval logo"></a>
+          <a href="https://brocku.ca/"><img src="images/logo-brock.png" alt="the University of Brock logo"></a>
+        </div> -->
+      </div>
+    </footer>
+  </div>
+</div>
+<script>
+  $(function(){
+    $("#showmenu").click(function(e){
+    $("#menu").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({duration: 1000, offset: 120,});
+</script>
+</body></html>
