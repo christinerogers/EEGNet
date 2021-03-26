@@ -523,8 +523,8 @@ video#myVideo {
 .title-content {
   position: absolute;
   top: 40%;
-  left: calc(50% - 150px);
-  width: 300px;
+  left: calc(50% - 200px);
+  width: 400px;
   text-align: center;
   line-height: initial;
   z-index: 1000;
